@@ -5,7 +5,7 @@ public class ConvertBase {
 	private static final String CHARSET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	
 	public static void main(String[] args) {
-		long origNum = 124;
+		long origNum = Long.MAX_VALUE;
 		int base = 2;
 		String otherBase = convertToBaseString(origNum, base);
 		System.out.println("Number in base [" + base + "] is [" + otherBase + "]");
@@ -24,7 +24,7 @@ public class ConvertBase {
 		checkBase(base);
 		StringBuilder sb = new StringBuilder();
 		while(num > 0) {
-			sb.append(CHARSET.charAt((int)num % base));
+			sb.append(CHARSET.charAt((int)(num % base)));
 			num /= base;
 		}
 		
