@@ -14,6 +14,11 @@ public class SortAsBinary {
 	private static List<Integer> rearrange(List<Integer> elements) {
 
 		elements.sort((i1, i2) -> {
+			if(i1 == null && i2 == null) return 0;
+			
+			if(i1 == null) i1 = 0;
+			if(i2 == null) i2 = 0;
+			
 			int one1 = countMethodOne(i1);	//Alternatively using first method
 			int one2 = countMethodTwo(i2);	//Alternatively using second method
 			
