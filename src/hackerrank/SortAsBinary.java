@@ -58,5 +58,4 @@ public class SortAsBinary {
 		}
 		return count;
 	}
-
 }
