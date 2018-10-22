@@ -75,8 +75,8 @@ public class RestClient {
 		MovieServiceReponse response = null;
 		if(responseCode == 200) {
 			InputStreamReader in = new InputStreamReader(con.getInputStream());
-			//response = //new Gson().fromJson(in, MovieServiceReponse.class);
-			//in.close();
+			response = new Gson().fromJson(in, MovieServiceReponse.class);
+			in.close();
 		}
 		return response;
 	}
