@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.google.gson.Gson;
+
 public class RestClient {
 	
 	   public static void main(String[] args) throws IOException{
