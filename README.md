@@ -1,2 +1,2 @@
 # hackerRank
-HackerRank questions solved
+HackerRank questions of Macquarie Sydney solved
